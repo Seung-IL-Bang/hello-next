@@ -3,6 +3,8 @@ import clsx from 'clsx';
 
 export default function InvoiceStatus({ status }: { status: string }) {
   return (
+    // Using the "clsx" library to toggle class names
+    // If it's 'paid', you want the color to be green. If it's 'pending', you want the color to be gray.
     <span
       className={clsx(
         'inline-flex items-center rounded-full px-2 py-1 text-xs',
